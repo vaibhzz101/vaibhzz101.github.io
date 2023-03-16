@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Vaibhav - Portfolio</title>
+    <meta name="title" content="Vaibhav - Portfolio" />
+    <meta
+      name="description"
+      content="this is portfolio of vaibhav shevne made by vaibhav"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg" />
+    <link rel="preload" as="image" href="./assets/images/pattern-3.svg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src=""
+            width="119"
+            height="37"
+            alt="vaibhzz"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src=""
+                width="119"
+                height="37"
+                alt="vaibhzz"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link hover-1" data-nav-toggler
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a href="#About" class="navbar-link hover-1" data-nav-toggler
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a href="#Techstack" class="navbar-link hover-1" data-nav-toggler
+                >Techstack</a
+              >
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link hover-1" data-nav-toggler
+                >Contact</a
+              >
+            </li>
+
+        
+          </ul>
+
+          <div class="navbar-bottom">
+            <div class="profile-card">
+              <img
+                src="./assets/images/author-1.png"
+                width="48"
+                height="48"
+                alt="Vaibhav"
+                class="profile-banner"
+              />
+
+
+            <ul class="link-list">
+              <li>
+                <a href="#Home" class="navbar-bottom-link hover-1">Profile</a>
+              </li>
+
+
+            </ul>
+          </div>
+
+      
+        </nav>
+
+        <a href="#Resume" class="btn btn-primary">Resume</a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Hello Everyone!</p>
+
+              <h1 class="headline headline-1 section-title">
+                I’m <span class="span">Vaibhav Shevne</span>
+              </h1>
+
+              <p class="hero-text">
+                A self-motivated, hard-working & ambitious Web
+                developer with proficiency in JavaScript & HTML, CSS
+                problem-solving mindset and the ability to collaborate
+                well.
+              </p>
+            </div>
+
+            <div class="hero-banner">
+              <img
+                src="./assets/images/profile-img.png"
+                width="327"
+                height="490"
+                alt="Wren Clark"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/pattern-2.svg"
+                width="27"
+                height="26"
+                alt="shape"
+                class="shape shape-1"
+              />
+
+              <img
+                src="./assets/images/pattern-3.svg"
+                width="27"
+                height="26"
+                alt="shape"
+                class="shape shape-2"
+              />
+            </div>
+
+            <img
+              src="./assets/images/shadow-1.svg"
+              width="500"
+              height="800"
+              alt=""
+              class="hero-bg hero-bg-1"
+            />
+
+            <img
+              src="./assets/images/shadow-2.svg"
+              width="500"
+              height="500"
+              alt=""
+              class="hero-bg hero-bg-2"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #TOPICS
+      -->
+
+        <section class="topics" id="topics" aria-labelledby="topic-label">
+          <div class="container">
+            <div class="card topic-card">
+              <div class="card-content">
+                <div id="services">
+                  <div id="container">
+                      <h1 class="sub-title">Skills</h1>
+                
+              </div>
+
+              <div class="slider" data-slider>
+                <ul class="slider-list" data-slider-container>
+                  <div class="services-list">
+                  <li class="slider-item">
+                   
+                      <div>
+                          <i class="fa-solid fa-code"></i>
+                          <h2>Front-End</h2>
+                          <p>HTML,CSS,JAVASCRIPT,REACT</p>
+                          <a href="#">Learn more</a>
+                      </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <div>
+                      <i class="fa-solid fa-crop"></i>
+                      <h2>Back-End</h2>
+                      <p>NODE.JS,EXPRESS,MONGODB</p>
+                      <a href="#">Learn more</a>
+                  </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <div>
+                      <i class="fa-brands fa-app-store-ios"></i>
+                      <h2>DSA</h2>
+                      <p>STRING,ARRAY,LINKEDLIST,RECURSION</p>
+                      <a href="#">Learn more</a>
+                  </div>
+                  </li>
+                  </div>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+
+        <!-- 
+        - Tech Stacks
+      -->
+
+        <section class="tags" aria-labelledby="tag-label">
+          <div class="container">
+            <h2 class="headline headline-2 section-title" id="tag-label">
+              <span class="span">Tech Stacks</span>
+            </h2>
+
+            <p class="section-text">TechStacks</p>
+
+            <ul class="grid-list">
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag1.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="HTML"
+                  />
+
+                  <p class="btn-text">HTML</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag2.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="CSS"
+                  />
+
+                  <p class="btn-text">CSS</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag3.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="JavaScript"
+                  />
+
+                  <p class="btn-text">JavaScript</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag4.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="NodeJS"
+                  />
+
+                  <p class="btn-text">NodeJS</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag5.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="Express"
+                  />
+
+                  <p class="btn-text">Express</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag6.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="MongoDB"
+                  />
+
+                  <p class="btn-text">MongoDB</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag7.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="Mongoose"
+                  />
+
+                  <p class="btn-text">Mongoose</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag8.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="GIT"
+                  />
+
+                  <p class="btn-text">GIT</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag9.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="Socket"
+                  />
+
+                  <p class="btn-text">Socket</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag10.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="NPM"
+                  />
+
+                  <p class="btn-text">NPM</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag11.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="SQL"
+                  />
+
+                  <p class="btn-text">SQL</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="card tag-btn">
+                  <img
+                    src="./assets/images/tag12.png"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    alt="Bootstrap"
+                  />
+
+                  <p class="btn-text">Bootstrap/p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+       
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer>
+      <div class="container">
+        <div class="card footer">
+          <div class="section footer-top">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img
+                  src="./assets/images/logo.svg"
+                  width="119"
+                  height="37"
+                  loading="lazy"
+                  alt="Wren logo"
+                />
+              </a>
+
+              <p class="footer-text">
+     Contact me 
+              </p>
+
+              <p class="footer-list-title">Address</p>
+
+              <address class="footer-text address">
+               Khamgaon <br />
+                Maharashtra-444303, India
+              </address>
+            </div>
+
+
+            <div class="footer-list">
+              <p class="footer-list-title">Contact Me</p>
+
+              <p class="footer-text">
+                reach out me for job opportunities
+              </p>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Emaill address"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <a href="#" class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <ul class="social-list">
+              <li>
+                <a href="https://twitter.com/vaibhav_shevne" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/vaibhav-shevne-1b1935170/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+
+                  <span class="span">LinkedIn</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/vaibhav_shevne" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
