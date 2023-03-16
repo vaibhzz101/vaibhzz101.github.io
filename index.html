@@ -8,7 +8,7 @@
     <!-- 
     - primary meta tags
   -->
-    <title>Vaibhav - Portfolio</title>
+    <title>Vaibhav-Shevne - Portfolio</title>
     <meta name="title" content="Vaibhav - Portfolio" />
     <meta
       name="description"
@@ -50,16 +50,12 @@
 
     <header class="header" data-header>
       <div class="container">
-        <a href="#" class="logo">
-          <img
-            src=""
-            width="119"
-            height="37"
-            alt="vaibhzz"
-          />
+        <a href="index.html" class="logo">
+         <h2>Portfolio</h2>
+       
         </a>
 
-        <nav class="navbar" data-navbar>
+        <nav id="nav-menu" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
@@ -81,27 +77,30 @@
 
           <ul class="navbar-list">
             <li>
-              <a href="#home" class="navbar-link hover-1" data-nav-toggler
+              <a href="#home" class="nav-link home" data-nav-toggler
                 >Home</a
               >
             </li>
 
             <li>
-              <a href="#About" class="navbar-link hover-1" data-nav-toggler
+              <a href="#About" class="nav-link about" data-nav-toggler
                 >About</a
               >
             </li>
-
             <li>
-              <a href="#Techstack" class="navbar-link hover-1" data-nav-toggler
-                >Techstack</a
+              <a href="#Projects" class="nav-link projects" data-nav-toggler
+                >Projects</a
               >
             </li>
 
+      
             <li>
-              <a href="#contact" class="navbar-link hover-1" data-nav-toggler
+              <a href="#contact" class="nav-link contact" data-nav-toggler
                 >Contact</a
               >
+            </li>
+            <li>
+              <a href="#Resume" id="resume-link-2" class="btn btn-primary" class="nav-link resume">Resume</a>
             </li>
 
         
@@ -130,7 +129,7 @@
       
         </nav>
 
-        <a href="#Resume" class="btn btn-primary">Resume</a>
+  
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -149,11 +148,11 @@
             <div class="hero-content">
               <p class="hero-subtitle">Hello Everyone!</p>
 
-              <h1 class="headline headline-1 section-title">
+              <h1 id="user-detail-name" class="headline headline-1 section-title">
                 I’m <span class="span">Vaibhav Shevne</span>
               </h1>
 
-              <p class="hero-text">
+              <p id="user-detail-intro" class="hero-text">
                 A self-motivated, hard-working & ambitious Web
                 developer with proficiency in JavaScript & HTML, CSS
                 problem-solving mindset and the ability to collaborate
@@ -161,7 +160,7 @@
               </p>
             </div>
 
-            <div class="hero-banner">
+            <div class="home-img">
               <img
                 src="./images/profile-img.png"
                 width="327"
@@ -206,45 +205,50 @@
         </section>
 
         <!-- 
-        - #TOPICS
+        - #skills
       -->
 
-        <section class="topics" id="topics" aria-labelledby="topic-label">
+        <section class="Skills" id="skills" aria-labelledby="topic-label">
           <div class="container">
+            <h2 class="headline headline-2 section-title" id="tag-label">
+              <span class="span">Skills</span>
+            </h2>
+
+            <!-- <p class="section-text">Skills</p> -->
             <div class="card topic-card">
               <div class="card-content">
-                <div id="services">
+                <div id="skillss">
                   <div id="container">
-                      <h1 class="sub-title">Skills</h1>
-                
-              </div>
-
+                     
               <div class="slider" data-slider>
                 <ul class="slider-list" data-slider-container>
-                  <div class="services-list">
-                  <li class="slider-item">
+                  <div class="skills-list">
+                  <li class="skills-card">
                    
                       <div>
                           <i class="fa-solid fa-code"></i>
-                          <h2>Front-End</h2>
+                          <img class="skills-card-img"src="" alt=""> 
+                          <h2 class="skills-card-name" >Front-End</h2>
                           <p>HTML,CSS,JAVASCRIPT,REACT</p>
                           <a href="#">Learn more</a>
                       </div>
                   </li>
 
-                  <li class="slider-item">
+                  <li class="skills-card">
                     <div>
                       <i class="fa-solid fa-crop"></i>
-                      <h2>Back-End</h2>
+                      <img class="skills-card-img"src="" alt="">
+                      <h2 class="skills-card-name" >Back-End</h2>
                       <p>NODE.JS,EXPRESS,MONGODB</p>
                       <a href="#">Learn more</a>
                   </div>
                   </li>
 
-                  <li class="slider-item">
+                  <li class="skills-card">
                     <div>
                       <i class="fa-brands fa-app-store-ios"></i>
-                      <h2>DSA</h2>
+                      <img class="skills-card-img"src="" alt="">
+                      <h2 class="skills-card-name">DSA</h2>
                       <p>STRING,ARRAY,LINKEDLIST,RECURSION</p>
                       <a href="#">Learn more</a>
                   </div>
@@ -252,8 +256,24 @@
                   </div>
 
                 </ul>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- #PROJECT SECTION -->
+
+        
+        <section class="projects" id="projects" aria-labelledby="topic-label">
+          <div class="container">
+            <h2 class="headline headline-2 section-title" id="tag-label">
+              <span class="span">Projects</span>
+            </h2>
+
           </div>
         </section>
 
@@ -269,7 +289,7 @@
               <span class="span">Tech Stacks</span>
             </h2>
 
-            <p class="section-text">TechStacks</p>
+            <!-- <p class="section-text">TechStacks</p> -->
 
             <ul class="grid-list">
               <li>
@@ -449,18 +469,12 @@
   -->
 
     <footer>
-      <div class="container">
+      <div class="container" id="contact">
         <div class="card footer">
           <div class="section footer-top">
             <div class="footer-brand">
               <a href="#" class="logo">
-                <img
-                  src="./images/logo.svg"
-                  width="119"
-                  height="37"
-                  loading="lazy"
-                  alt="Wren logo"
-                />
+              <h2>Vaibhav Shevne</h2>
               </a>
 
               <p class="footer-text">
