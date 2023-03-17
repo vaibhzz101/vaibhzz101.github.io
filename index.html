@@ -38,7 +38,7 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./images/hero-banner.png" />
+    <link rel="preload" as="image" href="./images/profile-img.png" />
     <link rel="preload" as="image" href="./images/pattern-2.svg" />
     <link rel="preload" as="image" href="./images/pattern-3.svg" />
   </head>
@@ -109,7 +109,7 @@
           <div class="navbar-bottom">
             <div class="profile-card">
               <img
-                src="./images/author-1.png"
+                src="./images/profile-img.png"
                 width="48"
                 height="48"
                 alt="Vaibhav"
@@ -140,7 +140,7 @@
     <main>
       <article>
         <!-- 
-        - #HERO
+        - Home Sectio
       -->
 
         <section class="hero" id="home" aria-label="home">
@@ -158,6 +158,13 @@
                 problem-solving mindset and the ability to collaborate
                 well.
               </p>
+             <div class="social-media">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+             </div>
+             <a href="#Resume" id="resume-link-2" class="btn btn-primary" class="nav-link resume">Download Resume</a>
             </div>
 
             <div class="home-img">
@@ -165,7 +172,7 @@
                 src="./images/profile-img.png"
                 width="327"
                 height="490"
-                alt="Wren Clark"
+                alt="Vaibhav Shevne"
                 class="w-100"
               />
 
@@ -204,62 +211,61 @@
           </div>
         </section>
 
+
+
+<!-- *************************  ** About Section **  *************************** -->
+
+<section class="about" id="about">
+ <div class="about-img">
+  <img src="./images/vaibhavProfile.png" alt="">
+ </div>
+<div class="about-content">
+  <h2 class="heading">About <span>Me!</span></h2>
+  <h3>Full Stack Web Developer</h3>
+  <p id="user-detail-intro" class="hero-text">
+    A self-motivated, hard-working & ambitious Web
+    developer with proficiency in JavaScript & HTML, CSS
+    problem-solving mindset and the ability to collaborate
+    well.
+  </p>
+  <a href="#" class="btn btn-primary">Read More</a>
+</div>
+
+
+</section>
+
+
+
+
         <!-- 
         - #skills
       -->
 
         <section class="Skills" id="skills" aria-labelledby="topic-label">
-          <div class="container">
-            <h2 class="headline headline-2 section-title" id="tag-label">
-              <span class="span">Skills</span>
-            </h2>
-
-            <!-- <p class="section-text">Skills</p> -->
-            <div class="card topic-card">
-              <div class="card-content">
-                <div id="skillss">
-                  <div id="container">
-                     
-              <div class="slider" data-slider>
-                <ul class="slider-list" data-slider-container>
-                  <div class="skills-list">
-                  <li class="skills-card">
-                   
-                      <div>
-                          <i class="fa-solid fa-code"></i>
-                          <img class="skills-card-img"src="" alt=""> 
-                          <h2 class="skills-card-name" >Front-End</h2>
-                          <p>HTML,CSS,JAVASCRIPT,REACT</p>
-                          <a href="#">Learn more</a>
-                      </div>
-                  </li>
-
-                  <li class="skills-card">
-                    <div>
-                      <i class="fa-solid fa-crop"></i>
-                      <img class="skills-card-img"src="" alt="">
-                      <h2 class="skills-card-name" >Back-End</h2>
-                      <p>NODE.JS,EXPRESS,MONGODB</p>
-                      <a href="#">Learn more</a>
-                  </div>
-                  </li>
-
-                  <li class="skills-card">
-                    <div>
-                      <i class="fa-brands fa-app-store-ios"></i>
-                      <img class="skills-card-img"src="" alt="">
-                      <h2 class="skills-card-name">DSA</h2>
-                      <p>STRING,ARRAY,LINKEDLIST,RECURSION</p>
-                      <a href="#">Learn more</a>
-                  </div>
-                  </li>
-                  </div>
-
-                </ul>
-                </div>
-              </div>
+          <h2 class="heading">My<span>Skills</span></h2>
+          <div class="skills-container">
+            <div class="skills-box">
+              <i></i>
+              <h3>Front-End Development</h3>
+              <p>HTML | CSS | JavaScript</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="skills-box">
+              <i></i>
+              <h3>Back-End Development</h3>
+              <p>NodeJS | Express | MongoDB </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="skills-box">
+              <i></i>
+              <h3>DSA</h3>
+              <p>STRING,ARRAY,LINKEDLIST,RECURSION</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
+          
+                
+         
         </section>
 
 
@@ -269,11 +275,32 @@
 
         
         <section class="projects" id="projects" aria-labelledby="topic-label">
-          <div class="container">
-            <h2 class="headline headline-2 section-title" id="tag-label">
-              <span class="span">Projects</span>
-            </h2>
-
+          <h2 class="heading">My <span>Projects</span></h2>
+          <div class="project-container">
+            <div class="project-box">
+              <img src="" alt="">
+              <div class="project-layer">
+                <h4>Auto-Mech</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vel facilis sit rerum cumque quod?</p>
+              <a href="#"><i class=""></i></a>
+              </div>
+            </div>
+            <div class="project-box">
+              <img src="" alt="">
+              <div class="project-layer">
+                <h4>Ghoomocar</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vel facilis sit rerum cumque quod?</p>
+              <a href="#"><i class=""></i></a>
+              </div>
+            </div>
+            <div class="project-box">
+              <img src="" alt="">
+              <div class="project-layer">
+                <h4>Elyst</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vel facilis sit rerum cumque quod?</p>
+              <a href="#"><i class=""></i></a>
+              </div>
+            </div>
           </div>
         </section>
 
