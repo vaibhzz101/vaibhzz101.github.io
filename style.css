@@ -484,6 +484,26 @@ body.nav-active { overflow: hidden; }
   left: 24px;
 }
 
+.social-media a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--bg-carolina-blue);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--bg-carolina-blue);
+  margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover {
+  background: var(--bg-carolina-blue);
+  color: var(--bg-oxford-blue);
+  box-shadow: 0 0 1rem var(--bg-carolina-blue);
+}
+
 
 /*-----------------------------------*\
   #ABOUT SECTION
@@ -618,6 +638,12 @@ body.nav-active { overflow: hidden; }
 .project-layer h4 {
   font-size: 3rem;
 }
+.project-layer h5 {
+  font-size: 2rem;
+}
+.project-layer p {
+  font-size: 1.5rem;
+}
 .project-layer a {
   display: inline-flex;
   justify-content: center;
@@ -628,7 +654,7 @@ body.nav-active { overflow: hidden; }
   border-radius: 50%;
 }
 .project-layer a i {
-  font-size: 2rem;
+  font-size: 10ox;
   color: var(--bg-oxford-blue);
 }
 
