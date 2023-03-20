@@ -531,7 +531,7 @@ body.nav-active { overflow: hidden; }
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--bg-oxford-blue);
+  background: var(--bg-oxford-blue-2);
 }
 
 .about-img img {
@@ -1158,3 +1158,11 @@ body.nav-active { overflow: hidden; }
 
 }
 /*----------------------services------------------------*/
+
+.skills-head {
+  margin-top: 80px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
