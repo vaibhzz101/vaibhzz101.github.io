@@ -571,7 +571,7 @@ body.nav-active { overflow: hidden; }
   gap: 2rem;
 }
 
-.skills-container .skills-box {
+.skills-container .skills-card {
   flex: 1 1 30rem;
   background: var(--bg-prussian-blue);
   padding: 3rem 2rem 4rem;
@@ -580,20 +580,20 @@ body.nav-active { overflow: hidden; }
   border: .2rem solid var(--border-prussian-blue);
   transition: .5s ease;
 }
-.skills-container .skills-box:hover {
+.skills-container .skills-card:hover {
   border-color: var(--bg-carolina-blue);
   transform: scale(1.02);
 } 
-.skills-box i {
+.skills-card i {
   font-size: 7rem;
   color: var(--fontSize-1
   );
 }
-.skills-box h3 {
+.skills-card h3 {
   font-size: 2.6rem;
 
 }
-.skills-box p {
+.skills-card p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
