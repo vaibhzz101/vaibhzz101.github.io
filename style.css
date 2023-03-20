@@ -543,14 +543,14 @@ body.nav-active { overflow: hidden; }
   font-size: 4.5rem;
 }
 
-.about-section h2 {
+.about .section h2 {
   text-align: left;
   line-height: 1.2;
 }
-.about-section h3 {
+.about .section h3 {
   font-size: 2.6rem;
 }
-.about-section p {
+.about .section p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
