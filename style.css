@@ -258,7 +258,7 @@ body.nav-active { overflow: hidden; }
   border-radius: var(--radius-pill);
 }
 
-.w-100 { width: 100%; }
+.home-img { width: 100%; }
 
 .card {
   background-color: var(--bg-oxford-blue);
@@ -441,7 +441,7 @@ body.nav-active { overflow: hidden; }
 
 .home-img { position: relative; }
 
-.home-img .w-100 {
+.home-img {
   max-width: max-content;
   margin-inline: auto;
 }
@@ -526,7 +526,7 @@ body.nav-active { overflow: hidden; }
   #ABOUT SECTION
 \*-----------------------------------*/
 
-.about {
+#about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,14 +543,14 @@ body.nav-active { overflow: hidden; }
   font-size: 4.5rem;
 }
 
-.about-content h2 {
+.about-section h2 {
   text-align: left;
   line-height: 1.2;
 }
-.about-content h3 {
+.about-section h3 {
   font-size: 2.6rem;
 }
-.about-content p {
+.about-section p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
