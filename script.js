@@ -20,11 +20,11 @@ const addEventOnElements = function (elements, eventType, callback) {
     GitHubCalendar(".calendar", "vaibhzz101", { responsive: true });
 
     // Use a proxy
-    GitHubCalendar(".calendar", "vaibhzz101", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${vaibhzz101}`)
-       }
-    }).then(r => r.text())
+    // GitHubCalendar(".calendar", "vaibhzz101", {
+    //    proxy (username) {
+    //      return fetch(`https://your-proxy.com/github?user=${vaibhzz101}`)
+    //    }
+    // }).then(r => r.text())
 
 
 
