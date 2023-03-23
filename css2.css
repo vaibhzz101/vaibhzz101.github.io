@@ -438,79 +438,69 @@ span {
 
   
 /*-----------------------------------Contact----------------------------------------*/
+
 #contact {
-  display: flex;
-}
-.contact-left{
-  flex-basis: 35%;
-}
-
-.contact-right{
-  flex-basis: 60%;
-}
-
-.contact-left a{
-  margin-top: 30px;
-      color: #ababab;
-          margin-right: 15px;
-          text-decoration: none;
-  
-}
-
-.contact-left div{
-  display: grid;
-}
-
-.contact-left a i{
-  color: #ff004f;
-  margin-right: 15px;
-  font-size: 25px;
-}
-
-.social-icons{
-  margin-top: 30px;
-}
-
-.social-icons a{
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-
-.social-icons a:hover{
-  color: #ff004f;
-  transform: translateY(-5px);
-}
-
-.btn.btn2{
-  display: inline-block;
-  background: #ff004f;
-  border-radius: 10px;
-  border: none;
-}
-
-.contact-right form{
+  height: 400px;
   width: 100%;
+  color: var(--second-bg-color);
+  background: var(--);
+  background: var(--bgGrad);
+  text-align: center;
 }
 
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background-color: #262626;
-  padding: 15px;
-  margin: 15px 0;
+#contact > div > p {
+  color: var(--secondary-color);
+}
+
+.contact_me {
   color: #fff;
-  font-size: 18px;
-  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
 }
 
-form .btn2{
-  padding: 14px 60px;
-  font-size: 18px;
+.contact_me > p > a > span {
+  text-decoration: underline;
+}
+
+
+
+.contact_me > div {
   margin-top: 20px;
+}
+
+.contact_me > p {
+  margin-bottom: 20px;
+}
+
+
+
+.project-link {
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
   cursor: pointer;
+}
+
+#contact-linkedin i {
+  margin-right: 40px;
+}
+
+#contact-github i {
+  margin-right: 40px;
+}
+
+.project-link:hover i {
+  color: var(--bg-carolina-blue);
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+  scale: 110%;
+  transform: translate3d(0px, -16px, 0px);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.contact_me > div > a > i {
+  transform: translate3d(0px, -8px, -8px);
 }
