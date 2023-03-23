@@ -118,14 +118,18 @@ body {
   font-weight: 600;
   cursor: default;
 }
-#nav-menu a {
+#ul-menu a {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
 }
-
-#nav-menu a:hover,
-#nav-menu a.active {
+#ul-menu {
+  list-style: none;
+  display: flex;
+  background: var(--bg-oxford-blue);
+}
+#ul-menu a:hover,
+#ul-menu a.active {
   color:var(--bg-carolina-blue)
 }
 #menu-icon {
@@ -230,11 +234,14 @@ span {
   /*-----------------------------------*\
     #SKILSS 
   \*-----------------------------------*/
-  
-  .skills h2 {
+  #skills > .container > .heading {
+    margin-bottom: 10px;
+  }
+  #skills h2 {
     margin-bottom: 5rem;
   }
   .skills-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,6 +432,7 @@ span {
     display: grid;
     gap: 30px;
     list-style: none;
+    margin-top: 0;
   }
   
   .card {

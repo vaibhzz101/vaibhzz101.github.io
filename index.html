@@ -60,11 +60,22 @@
   <i class='bx bx-menu' id="menu-icon"></i>
 
   <nav id="nav-menu">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <ul id="ul-menu"> 
+    <li class="nav-link home"> <a href="#home" class="active">Home</a></li>
+    <li class="nav-link about"><a href="#about">About</a></li>
+    <li class="nav-link skills"><a href="#skills">Skills</a></li>
+    <li class="nav-link projects"><a href="#projects">Projects</a></li>
+    <li class="nav-link contact"><a href="#contact">Contact</a></li>
+
+    <li id="resume-button-1" class="nav-link resume">
+      <a
+        href="Vaibhav-Shevne-Resume.pdf"
+        target="_blank"
+        id="resume-link-1"
+        download="Vaibhav-Shevne-Resume"
+        >Resume <i class='bx bxs-download'></i></a>
+    </li>
+    </ul>
   </nav>
  </header>
 <!------------------------ navbar ends------------------------------>
@@ -87,13 +98,18 @@
               <a href="https://www.facebook.com/vaibhav.shevne.1"><i class='bx bxl-facebook'></i></a>
              </div>
           
-             <a href="Vaibhav-Shevne-Resume.pdf" id="resume-link-2" class="button">Resume</a>
+             <div id="resume-button-2">
+              <a href="Vaibhav-Shevne-Resume.pdf" id="resume-link-2" class="button">Resume </a>
+             </div>
+             
       
             </div>
 
-            <div class="home-img">
-              <img
-                src="./images/profile-img.png" alt="" />
+            <div class="home-image">
+              <img 
+                class="home-img"
+                src="./images/profile-img.png" 
+                alt="profile-pic" />
           </div>
         </section>
 
@@ -101,13 +117,13 @@
 
 <!-- *************************  ** About Section **  *************************** -->
 
-<section id="about" class="about">
+<section id="about" class="about section">
  <!-- <div class="about-img">
   <img src="./images/about-img.png" alt="">
  </div> -->
 <div class="about-content">
-  <h2 class="heading" >About
-    <span class="span">Me!</span>
+  <h2 class="heading" ><i class='bx bx-user' ></i>About
+    <span >Me!</span>
     </h2>
   <h3>Full Stack Web Developer</h3>
   <p id="user-detail-intro" class="hero-text">
@@ -122,16 +138,195 @@
 
 </section>
 
-
-
-
-        <!-- 
-        - #skills
+<!-- 
+        - Tech Stacks
       -->
 
-        <section class="Skills" id="skills">
-          <h2 class="heading" >My
-            <span>Skills</span></h2>
+      <section id="skills" class="tags" aria-labelledby="tag-label">
+        <div class="container">
+          <h2 class="heading" >Skills &
+            <span>Abilities</span></h2>
+
+          <!-- <p class="section-text">TechStacks</p> -->
+
+          <ul class="grid-list">
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/html"
+                  class="skills-card-img"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="HTML"
+                />
+
+                <p class="skills-card-name">HTML</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/css.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="CSS"
+                />
+
+                <p class="skills-card-name">CSS</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/js.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="JavaScript"
+                />
+
+                <p class="skills-card-name">JavaScript</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/node.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="NodeJS"
+                />
+
+                <p class="skills-card-name">NodeJS</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/express.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Express"
+                />
+
+                <p class="skills-card-name">Express</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/mongo.png"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="MongoDB"
+                />
+
+                <p class="skills-card-name">MongoDB</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/th.webp"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="Mongoose"
+                />
+
+                <p class="skills-card-name">Mongoose</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  src="./images/redis.svg"
+                  class="skills-card-img"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="GIT"
+                />
+
+                <p class="skills-card-name">Redis</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  class="skills-card-img"
+            
+                />
+
+                <p class="skills-card-name">Netlify</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                  class="skills-card-img"
+                  src="./images/npm.webp"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  alt="NPM"
+                />
+
+                <p class="skills-card-name">NPM</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                class="skills-card-img"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                
+                />
+
+                <p class="skills-card-name">VSCode</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img
+                class="skills-card-img"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                
+                />
+
+                <p class="skills-card-name">Bootstrap </p>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+
           <div class="skills-container">
             <div class="skills-card">
               <i class='bx bx-code-alt' class="skills-card-img"></i>
@@ -157,8 +352,7 @@
          </div>
         </section>
 
-
-
+     
 
         <!-- #PROJECT SECTION -->
 
@@ -213,189 +407,7 @@
 
      
 
-        <!-- 
-        - Tech Stacks
-      -->
-
-        <section class="tags" aria-labelledby="tag-label">
-          <div class="container skills-head">
-            <h2 class="headline headline-2 section-title heading" id="tag-label">
-              <span class="span">Tech Stacks</span>
-            </h2>
-
-            <!-- <p class="section-text">TechStacks</p> -->
-
-            <ul class="grid-list">
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/html"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="HTML"
-                  />
-
-                  <p class="btn-text">HTML</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/css.png"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="CSS"
-                  />
-
-                  <p class="btn-text">CSS</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/js.png"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="JavaScript"
-                  />
-
-                  <p class="btn-text">JavaScript</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/node.png"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="NodeJS"
-                  />
-
-                  <p class="btn-text">NodeJS</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/express.png"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="Express"
-                  />
-
-                  <p class="btn-text">Express</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/mongo.png"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="MongoDB"
-                  />
-
-                  <p class="btn-text">MongoDB</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/th.webp"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="Mongoose"
-                  />
-
-                  <p class="btn-text">Mongoose</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/git.webp"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="GIT"
-                  />
-
-                  <p class="btn-text">GIT</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                  
-                    width="32"
-                    height="32"
-                    loading="lazy"
-              
-                  />
-
-                  <p class="btn-text">Socket</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    src="./images/npm.webp"
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                    alt="NPM"
-                  />
-
-                  <p class="btn-text">NPM</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-                    
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                  
-                  />
-
-                  <p class="btn-text">SQL</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="card tag-btn">
-                  <img
-              
-                    width="32"
-                    height="32"
-                    loading="lazy"
-                  
-                  />
-
-                  <p class="btn-text">Bootstrap </p>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </section>
+   
 
 
 
