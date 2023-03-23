@@ -2,7 +2,7 @@
 
 :root {
 
-  /**
+  /**dow
    * COLORS
    */
 
@@ -159,11 +159,13 @@ html {
 
 body {
   background-color: var(--bg-oxford-blue-2);
+
   color: var(--text-shadow-blue);
   font-family: var(--fontFamily-noto_sans);
   font-size: 1.6rem;
+
   line-height: var(--lineHeight-4);
-  overflow-y: overlay;
+  overflow-y: scroll;
 }
 
 body.nav-active { overflow: hidden; }
