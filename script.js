@@ -28,17 +28,17 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 // addEventOnElements(navTogglers, "click", toggleNav);
 
-let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+// let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+// let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
 
 
 
-function NewTab() {
-  window.open(
-    "https://drive.google.com/file/d/1PWDFAedYbOU7LGcKE9O8SNiY1aUOCr_N/view?usp=share_link",
-    "_blank"
-  );
-}
+// function NewTab() {
+//   window.open(
+//     "https://drive.google.com/file/d/1PWDFAedYbOU7LGcKE9O8SNiY1aUOCr_N/view?usp=share_link",
+//     "_blank"
+//   );
+// }
 
 
 
