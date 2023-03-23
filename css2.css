@@ -236,9 +236,9 @@ span {
   /*-----------------------------------*\
     #SKILSS 
   \*-----------------------------------*/
-  #skills > .container > .heading {
+  /* #skills > .container > .heading {
     margin-bottom: 10px;
-  }
+  } */
   #skills h2 {
     margin-bottom: 5rem;
   }
