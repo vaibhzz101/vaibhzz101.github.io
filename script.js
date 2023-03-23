@@ -14,6 +14,34 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 
 
+    GitHubCalendar(".calendar", "vaibhzz101");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "vaibhzz101", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "vaibhzz101", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${vaibhzz101}`)
+       }
+    }).then(r => r.text())
+
+
+
+    let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+
+    function NewTab() {
+      window.open(
+        "https://drive.google.com/file/d/16tQUUbquZpysvg0H4ZR6gTEdReZQuqjO/view",
+        "_blank"
+      );
+    }
+
+
+
+
+
 /**
  * MOBILE NAVBAR TOGGLER
  */

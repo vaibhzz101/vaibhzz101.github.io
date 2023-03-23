@@ -14,8 +14,10 @@ html {
 }
 
 body {
-  background: var(--bg-oxford-blue);
+  background: var(--bg-oxford-blue-2);
   color: var(--text-color);
+  /* color: var(--text-shadow-blue); */
+
 }
 
 :root {
@@ -210,7 +212,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--bg-oxford-blue-2);
+    background: var(--bg-oxford-blue);
   }
   
   .heading {
@@ -249,28 +251,28 @@ span {
     gap: 2rem;
   }
   
-  .skills-container .skills-card {
+  .skills-container .skills-card-1 {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-oxford-blue);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--border-prussian-blue);
     transition: .5s ease;
   }
-  .skills-container .skills-card:hover {
+  .skills-container .skills-card-1:hover {
     border-color: var(--bg-carolina-blue);
     transform: scale(1.02);
   } 
-  .skills-card i {
+  .skills-card-1 i {
     font-size: 7rem;
     color: var(--bg-carolina-blue);
   }
-  .skills-card h3 {
+  .skills-card-1 h3 {
     font-size: 2.6rem;
   
   }
-  .skills-card p {
+  .skills-card-1 p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
   }
@@ -435,11 +437,11 @@ span {
     margin-top: 0;
   }
   
-  .card {
-    background-color: var(--bg-oxford-blue-2);
+  .skills-card {
+    background-color: var(--bg-oxford-blue);
     border: 1px solid var(--border-prussian-blue);
   }
-  .btn-text {
+  .skills-card-name {
     color: #7d91b0;
   }
 
@@ -511,4 +513,12 @@ span {
 }
 .contact_me > div > a > i {
   transform: translate3d(0px, -8px, -8px);
+}
+
+/* github */
+#github-stats {
+  margin-bottom: 70px;
+}
+#resume-button-2 {
+  list-style: none;
 }
