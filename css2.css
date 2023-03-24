@@ -236,9 +236,9 @@ span {
   /*-----------------------------------*\
     #SKILSS 
   \*-----------------------------------*/
-  #skills > .container > .heading {
-    margin-bottom: 10px;
-  }
+  /* #skills > .container > .heading {
+   
+  } */
   #skills h2 {
     margin-bottom: 5rem;
   }
@@ -434,7 +434,7 @@ span {
     display: grid;
     gap: 30px;
     list-style: none;
-    margin-top: 0;
+   
   }
   
   .skills-card {
