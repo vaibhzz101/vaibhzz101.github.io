@@ -114,24 +114,27 @@ body {
    align-items: center;
    z-index: 100;
 }
+.header.sticky {
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
 }
-#ul-menu a {
+#nav-menu a {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
 }
-#ul-menu {
+#nav-menu {
   list-style: none;
-  display: flex;
+ 
   background: var(--bg-oxford-blue);
 }
-#ul-menu a:hover,
-#ul-menu a.active {
+#nav-menu a:hover,
+#nav-menu a.active {
   color:var(--bg-carolina-blue)
 }
 #menu-icon {
@@ -149,6 +152,18 @@ body {
 }
 .home-img img {
   width: 35vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .home-content h3 {
   font-size: 3.2rem;
@@ -607,3 +622,105 @@ span {
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem var(--bg-carolina-blue);
 }
+
+/* ======== BREAKPOINTS */
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+
+    }
+  }
+  @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    section {
+      padding: 10rem 3% 2rem;
+    }
+    .skills {
+      padding-bottom: 7rem;
+    }
+    .project {
+      padding-bottom: 7rem;
+    }
+    .contact {
+      min-height: auto;
+    }
+    .footer {
+      padding: 2rem 3%;
+    }
+  }
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    #nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-oxford-blue);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    #nav-menu.active {
+      display: block;
+    } 
+    #nav-menu a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+  .home {
+    flex-direction: column;
+  }
+.home-content h3 {
+  font-size: 2.6rem;
+}
+.home-content h1 {
+  font-size: 5rem;
+}
+.home-img {
+  width: 70vw;
+  margin-top: 4rem;
+}
+.about {
+  flex-direction: column-reverse;
+} 
+.skills h2 {
+  margin-bottom: 3rem;
+}
+
+.project h2 {
+margin-bottom: 3rem;
+}
+
+.project-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+  }
+
+  @media (max-width: 450px){
+    html {
+      font-size: 50%;
+    }
+.contact form .input-box input {
+  width: 100%;
+}
+  }
+  @media (max-width: 365px){
+    .home-img img {
+      width: 90vw;
+    }
+    .footer {
+      flex-direction: column-reverse;
+    }
+    .footer p {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
