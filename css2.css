@@ -522,3 +522,7 @@ span {
 #resume-button-2 {
   list-style: none;
 }
+
+#github-stats {
+  justify-content: center;
+}
