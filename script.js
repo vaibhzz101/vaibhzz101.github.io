@@ -39,48 +39,26 @@ const addEventOnElements = function (elements, eventType, callback) {
     }
 
 
+let sections = document.querySelectorAll('section');
+let navlinks = document.querySelectorAll('header nav a')
 
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
 
+    if(top >= offset && top < offset + height) {
+        navlinks.forEach(links => {
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+        })
+    };
 
-/**
- * MOBILE NAVBAR TOGGLER
- */
+  })
+}
 
-// const navbar = document.querySelector("[data-navbar]");
-// const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-
-// const toggleNav = () => {
-//   navbar.classList.toggle("active");
-//   document.body.classList.toggle("nav-active");
-// }
-
-// addEventOnElements(navTogglers, "click", toggleNav);
-
-
-
-
-
-// function NewTab() {
-//   window.open(
-//     "https://drive.google.com/file/d/1PWDFAedYbOU7LGcKE9O8SNiY1aUOCr_N/view?usp=share_link",
-//     "_blank"
-//   );
-// }
-
-
-
-// const header = document.querySelector("[data-header]");
-// const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 100) {
-//     header.classList.add("active");
-//     backTopBtn.classList.add("active");
-//   } else {
-//     header.classList.remove("active");
-//     backTopBtn.classList.remove("active");
-//   }
-// });
 
 
 

@@ -576,3 +576,34 @@ span {
   font-weight: 300;
   font-size: 1rem;
 }
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+
+}
+.footer-iconTop a {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--bg-carolina-blue);
+  border-radius: .8rem;
+  transition: .5s ease;
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color);
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--bg-carolina-blue);
+}
