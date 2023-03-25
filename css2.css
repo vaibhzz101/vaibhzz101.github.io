@@ -226,7 +226,7 @@ span {
   \*-----------------------------------*/
    
   #about {
-    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -238,7 +238,7 @@ span {
     font-size: 4.5rem;
   }
   
-  .about-content h2 {
+  .about-content h3 {
     text-align: left;
     line-height: 1.2;
   }
@@ -248,16 +248,17 @@ span {
   .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: left;
   }
   
   
   /*-----------------------------------*\
     #SKILSS 
   \*-----------------------------------*/
-  /* #skills > .container > .heading {
+ 
    
-  } */
-  /* #skills h2 {
+  
+  #skills h2 {
     margin-bottom: 5rem;
   }
   .skills-container {
@@ -294,7 +295,7 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
   }
-   */
+   
   
   /*-----------------------------------*\
     #Projects
@@ -545,55 +546,7 @@ span {
   justify-content: center;
 }
 /* ----------------------------------------------------------------- */
-#skills {
-  background: var(--bg-oxford-blue-2);
-  user-select: none;
-  border: 1px solid rgba(0, 0, 0, 0);
-}
-.skills-head {
-  margin-top: 80px;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.skills-head > i {
-  margin-right: 10px;
-}
-/* .skills-head > span {
-  color: #dd6414;
-} */
-.skills-main {
 
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: auto;
-  gap: 50px;
-}
-.skills-card {
-  text-align: center;
-  background-color: var(--bg-oxford-blue-2);
-  border-radius: 10px;
-  height: 150px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-}
-.skills-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.skills-card > img {
-  width: 70px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  transform: translateZ(70px);
-}
-.skills-card-name {
-  font-weight: 300;
-  font-size: 1rem;
-}
 
 /* footer */
 .footer {
