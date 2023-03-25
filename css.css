@@ -91,6 +91,8 @@ body {
   /**
      * TYPOGRAPHY
      */
+
+     --section-padding: 70px;
   
     /** Font family */
     --fontFamily-noto_sans: 'Noto Sans', sans-serif;  
@@ -221,6 +223,58 @@ span {
     box-shadow: none;
   }
   
+/*  */
+.hero-bg { display: none; } 
+/* .home-image { position: relative; } */
+
+/* .home-image .home-img {
+  max-width: max-content;
+  margin-inline: auto;
+} */
+
+
+.home .shape {
+  position: absolute;
+  z-index: -1;
+
+  animation: homeDecoAnim 3s linear infinite alternate;
+}
+
+@keyframes homeDecoAnim {
+  0% { transform: translateY(40px) rotate(0); }
+  100% { transform: translateY(0) rotate(0.4turn); }
+}
+
+.home .shape-1 {
+  top: 50px;
+  right: 40px;
+}
+
+.home .shape-2 {
+  bottom: 20px;
+  left: 24px;
+}
+
+
+.hero-bg {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-bg-1 {
+  top: 80px;
+  left: 0;
+}
+
+.hero-bg-2 {
+  bottom: -200px;
+  left: -20px;
+}
+
+.shape-2 { left: 60px; }
+
+
   /*-----------------------------------*\
     #ABOUT SECTION
   \*-----------------------------------*/
@@ -547,8 +601,10 @@ span {
 }
 /* ----------------------------------------------------------------- */
 
+/*-----------------------------------*\
+ /* footer */
+/* \*-----------------------------------*/ 
 
-/* footer */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -615,6 +671,9 @@ span {
     #github-top-langs {
       width: 80%;
     }
+
+
+
   }
   @media (max-width: 768px) {
     #menu-icon {
@@ -666,6 +725,7 @@ margin-bottom: 3rem;
 .project-container {
   grid-template-columns: repeat(1, 1fr);
 }
+
 
   }
 
