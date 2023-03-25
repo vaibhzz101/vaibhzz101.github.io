@@ -8,18 +8,13 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active')
 };
 
+// *=============================== github calender ==================================
     GitHubCalendar(".calendar", "vaibhzz101");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "vaibhzz101", { responsive: true });
 
-    // Use a proxy
-    // GitHubCalendar(".calendar", "vaibhzz101", {
-    //    proxy (username) {
-    //      return fetch(`https://your-proxy.com/github?user=${vaibhzz101}`)
-    //    }
-    // }).then(r => r.text())
-
+// *=============================== resume open in new tab ==================================
 
 
     let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)

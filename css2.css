@@ -126,10 +126,13 @@ body {
 #nav-menu a {
   font-size: 1.7rem;
   color: var(--text-color);
-  margin-left: 4rem;
-}
+  margin-left: 3rem;
+} 
+
+
 #nav-menu {
   list-style: none;
+  display: flex;
  
   background: var(--bg-oxford-blue);
 }
@@ -298,7 +301,7 @@ span {
   \*-----------------------------------*/
   
   .project {
-    background: var(--bg-oxford-blue-2);
+    background: var(--bg-oxford-blue);
   }
   .project h2 {
     margin-bottom: 4rem;
@@ -467,9 +470,9 @@ span {
 #contact {
   height: 400px;
   width: 100%;
-  color: var(--second-bg-color);
+  /* color: var(--second-bg-color); */
   background: var(--);
-  background: var(--bgGrad);
+  background: var(--bg-oxford-blue);
   text-align: center;
 }
 
@@ -543,6 +546,7 @@ span {
 }
 /* ----------------------------------------------------------------- */
 #skills {
+  background: var(--bg-oxford-blue-2);
   user-select: none;
   border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -556,11 +560,11 @@ span {
 .skills-head > i {
   margin-right: 10px;
 }
-.skills-head > span {
+/* .skills-head > span {
   color: #dd6414;
-}
+} */
 .skills-main {
-  /* border: 1px solid; */
+
   width: 80%;
   margin: auto;
   display: grid;
@@ -570,10 +574,9 @@ span {
 }
 .skills-card {
   text-align: center;
-  background-color: var(--third);
+  background-color: var(--bg-oxford-blue-2);
   border-radius: 10px;
   height: 150px;
-  /* border: 1px solid; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -650,6 +653,15 @@ span {
     .footer {
       padding: 2rem 3%;
     }
+    #github-streak-stats {
+      width: 80%;
+    }
+    #github-stats-card {
+      width: 80%;
+    }
+    #github-top-langs {
+      width: 80%;
+    }
   }
   @media (max-width: 768px) {
     #menu-icon {
@@ -723,4 +735,7 @@ margin-bottom: 3rem;
       text-align: center;
       margin-top: 2rem;
     }
+  }
+  .calender {
+margin: 20px;
   }
