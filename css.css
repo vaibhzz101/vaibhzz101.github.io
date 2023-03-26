@@ -255,24 +255,8 @@ span {
   left: 24px;
 }
 
+/* me */
 
-.hero-bg {
-  display: block;
-  position: absolute;
-  pointer-events: none;
-}
-
-.hero-bg-1 {
-  top: 80px;
-  left: 0;
-}
-
-.hero-bg-2 {
-  bottom: -200px;
-  left: -20px;
-}
-
-.shape-2 { left: 60px; }
 
 
   /*-----------------------------------*\
@@ -751,4 +735,27 @@ margin-bottom: 3rem;
   }
   .calender {
 margin: 20px;
+  }
+
+  @media (min-width: 575px) {
+    .home { position: relative; }
+
+    .hero-bg {
+      display: block;
+      position: absolute;
+      pointer-events: none;
+    }
+    
+    .hero-bg-1 {
+      top: 80px;
+      left: 0;
+    }
+    
+    .hero-bg-2 {
+      bottom: -200px;
+      left: -20px;
+    }
+    
+    .shape-2 { left: 60px; }
+
   }
