@@ -411,6 +411,9 @@ span {
     font-size: 2rem;
     color: var(--bg-oxford-blue-2);
   }
+  .projectlinks {
+    display: flex;
+  }
    
   /*-----------------------------------*\
     #Contact
@@ -668,7 +671,7 @@ span {
       top: 100%;
       left: 0;
       width: 100%;
-      padding: 1rem 3%;
+      padding: ;
       background: var(--bg-oxford-blue);
       border-top: .1rem solid rgba(0, 0, 0, .2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
@@ -677,6 +680,9 @@ span {
     #nav-menu.active {
       display: block;
     } 
+    a.nav-link.skills {
+      padding: 0;
+    }
     #nav-menu a {
       display: block;
       font-size: 2rem;
