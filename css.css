@@ -697,6 +697,9 @@ margin-bottom: 3rem;
       text-align: center;
       margin-top: 2rem;
     }
+    .contact-left, .contact-right {
+      flex-basis: 100%;
+    }
   }
   .calender {
 margin: 20px;
@@ -812,3 +815,15 @@ margin: 20px;
   #github-stats {
     background-color: #000d1a;
   }
+@media only screen and (max-width: 600px) {
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+  }
+  
+}
+#msg {
+  color: #61b752;
+  margin-top: 10px;
+display: block;
+font-size: 20px;
+}
