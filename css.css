@@ -507,44 +507,9 @@ span {
 
 
   
-/*-----------------------------------Contact----------------------------------------*/
-
-#contact {
-  height: 400px;
-  width: 100%;
-  /* color: var(--second-bg-color); */
-  background: var(--);
-  background: var(--bg-oxford-blue);
-  text-align: center;
-}
-
-#contact > div > p {
-  color: var(--secondary-color);
-}
-
-.contact_me {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-top: 50px;
-}
-
-.contact_me > p > a > span {
-  text-decoration: underline;
-}
 
 
 
-.contact_me > div {
-  margin-top: 20px;
-}
-
-.contact_me > p {
-  margin-bottom: 20px;
-}
 
 
 
@@ -555,13 +520,7 @@ span {
   cursor: pointer;
 }
 
-#contact-linkedin i {
-  margin-right: 40px;
-}
 
-#contact-github i {
-  margin-right: 40px;
-}
 
 .project-link:hover i {
   color: var(--bg-carolina-blue);
@@ -764,4 +723,92 @@ margin: 20px;
     
     .shape-2 { left: 60px; }
 
+  }
+  /* contact form */
+
+  .contact-left {
+    flex-basis: 35%;
+  }
+  .contact-right {
+    flex-basis: 60%;
+  }
+  .contact-left p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .contact-left p i {
+    color:#0ea5ea;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .social-icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .social-icons a:hover {
+    color: #0ea5ea;
+    transform: translateY(-5px
+    );
+  }
+
+  .contact-container {
+    padding: 10px 10%;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact-right form {
+    width: 100%;
+  }
+  form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    /* background: #262626; */
+    background: var(--bg-color);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--bg-carolina-blue);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bg-carolina-blue);
+    font-size: 1.6rem;
+    color: var(--bg-oxford-blue);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+  }
+  btn:hover {
+    box-shadow: none;
+  }
+  .btn.btn2 {
+    display: inline-block;
+
+  }
+  form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+  }
+  #github-stats {
+    background-color: #000d1a;
   }
